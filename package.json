@@ -1,10 +1,12 @@
 {
   "name": "BASTION",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "private": true,
-  "author": "dedmau5",
+  "author": "@dedmau5",
+  "owner": "ekendahl@gmail.com",
   "description": "bleep-ble-bloop-tweep! pewpewpew!",
   "dependencies": {
+    "cron": "^1.2.1",
     "hubot": "^2.19.0",
     "hubot-diagnostics": "0.0.1",
     "hubot-google-images": "^0.2.6",
