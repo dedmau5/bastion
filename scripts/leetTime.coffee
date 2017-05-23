@@ -1,6 +1,6 @@
 # Description:
 #
-#   Bastion tells the time is 13:37
+#   Bastion tells the time is 13:37 in general channel
 #
 # Dependencies:
 #
