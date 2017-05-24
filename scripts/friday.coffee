@@ -12,7 +12,7 @@
 #
 # Author:
 #   captain jinx, dedmau5
-
+beerme = require("beerme").beers
 url = require("url")
 
 dayName = (day) ->
@@ -36,7 +36,8 @@ module.exports = (robot) ->
 
     if today.getDay() != 5
       msg.send "Nope, but you are still allowed to drink beer on a " + dayName(day) + "!"
-      msg.send "beer me"
+      #msg.send "beer me"
+      msg.send msg.random beerme.beers
       return
 
     msg.send "YES IT IS FRIDAY!!!"

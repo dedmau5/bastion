@@ -30,7 +30,7 @@ beers = [
 module.exports = (robot) ->
   robot.hear /.*(beer me).*/i, (msg) ->
     if msg.message.user.name == 'okej'
-      msg.send "Beer is not bleep for users who tränar, so here is something else for you!"
+      msg.send "Beer is not bleep for users who tränar fom fan, so here is something else for you! ...personally, I'd rather drink oil."
       msg.send "https://cdnssl.nu3.de/DE/product/3-x-gainomax-recovery-blaabaer-3-x-250-ml-97221-5730-12279-1-product.jpg"
     else
       msg.send msg.random beers
