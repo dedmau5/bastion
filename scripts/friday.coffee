@@ -36,7 +36,7 @@ module.exports = (robot) ->
 
     if today.getDay() != 5
       msg.send "Nope, but you are still allowed to drink beer on a " + dayName(day) + "!"
-      #msg.send "goatbot beer me"
+      msg.send "bastion beer me"
       return
 
     msg.send "YES IT IS FRIDAY!!!"
