@@ -12,8 +12,21 @@
 #
 # Author:
 #   captain jinx, dedmau5
-beerme = require("beerme").beers
 url = require("url")
+
+beers = [
+  "http://organicxbenefits.com/wp-content/uploads/2011/11/organic-beer-health-benefits.jpg",
+  "http://www.beer100.com/images/beermug.jpg",
+  "http://blog.collegebars.net/uploads/10-beers-you-must-drink-this-summer/10-beers-you-must-drink-this-summer-sam-adams-summer-ale.jpg",
+  "http://poemsforkush.files.wordpress.com/2012/04/beer.jpg",
+  "http://images.seroundtable.com/android-beer-dispenser-1335181876.jpg",
+  "http://365thingsaustin.com/wp-content/uploads/beer-flight1.jpg",
+  "http://i102.photobucket.com/albums/m109/beanbone/Austin_Amber_200.jpg",
+  "http://media.culturemap.com/crop/c8/a3/600x450/beer_tasting.jpg",
+  "http://www.edgewoodyachtclub.com/wp-content/uploads/2016/01/beer.gif",
+  "http://cdn.history.com/sites/2/2015/04/hith-london-beer-flood-iStock_000024885749Large-E.jpeg",
+  "http://esq.h-cdn.co/assets/15/24/980x490/landscape-1434056356-landscape-beer-youll-never-drink.jpg",
+]
 
 dayName = (day) ->
   return "monday" if day == 1
@@ -37,7 +50,7 @@ module.exports = (robot) ->
     if today.getDay() != 5
       msg.send "Nope, but you are still allowed to drink beer on a " + dayName(day) + "!"
       #msg.send "beer me"
-      msg.send msg.random beerme.beers
+      msg.send msg.random beers
       return
 
     msg.send "YES IT IS FRIDAY!!!"
