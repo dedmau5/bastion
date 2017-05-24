@@ -17,14 +17,20 @@
 
 
 module.exports = (robot) ->
-        robot.respond /PING$/i, (msg) ->
-          msg.send "PONG"
+    robot.respond /PING$/i, (msg) ->
+      msg.send "PONG"
 
-        robot.respond /TIME$/i, (msg) ->
-          msg.send "Server time is: #{new Date()}"
+    robot.respond /TIME$/i, (msg) ->
+      msg.send "Server time is: #{new Date()}"
 
-        robot.respond /HOW ARE YOU?$/i, (msg) ->
-          msg.send "I am fine, thank you. What be 'up' with thee?"
+    robot.respond /HOW ARE YOU?$/i, (msg) ->
+      msg.send "I am fine, thank you. What be 'up' with thee, hooman?"
 
-        robot.respond /WAZZUP?$/i, (msg) ->
-            msg.send "I'm fine af! 'sup witchou, homie?"
+    robot.respond /WAZZUP?$/i, (msg) ->
+        msg.send "I'm fine af! 'sup witchou, homie?"
+
+     robot.hear /hahaha/i, (res) ->
+       res.send "bleeeep-bleep-bleep-bleep...!!!"
+
+     robot.hear /niklas/i, (res) ->
+       res.send "...fuckin' Phara-picker..."
