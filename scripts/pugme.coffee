@@ -8,8 +8,8 @@
 #   None
 #
 # Commands:
-#   hubot pug me - Receive a pug
-#   hubot pug bomb N - get N pugs
+#   bastion pug me - Receive a pug
+#   bastion pug bomb N - get N pugs
 
 module.exports = (robot) ->
 
